@@ -1,0 +1,17 @@
+[project]
+name = "learn-maf"
+version = "0.1.0"
+description = "Learning project using uv for Python package management"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "Your Name" }]
+
+# No dependencies yet; add with `uv add <package>` or edit here
+dependencies = [
+    "agent-framework>=1.0.0b251120",
+]
+
+[tool.uv]
+# Create and use a local `.venv` at the project root
+managed = true
+python-preference = "system"
