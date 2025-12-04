@@ -17,6 +17,26 @@
 
 [01run-a-agent.py](src/agents/01run-a-agent.py) 能运行，但是 image 图片的网站已过期，无法运行图片解析部分
 
-[0202images.py](src/agents/02images.py) 能运行
+[02images.py](src/agents/02images.py) 能运行
+
+[03multi_turn_conversation.py](src/agents/03multi_turn_conversation.py) 能运行
+
+[04function_tools.py](src/agents/04function_tools.py) 能运行
+
+[05function_tools_approvals.py](src/agents/05function_tools_approvals.py) 无法运行，最新的代码里包含了 approval_mode 但是 agent-framework>=1.0.0b251120 里还没有，等更新吧
+
+[06custom_tool.py](src/agents/06custom_tool.py) 能运行
+
+[07agent_memory.py](src/agents/07agent_memory.py) 能运行
+
+[08chat_with_file_knowledge.py](src/agents/08chat_with_file_knowledge.py) 能运行
+
+[09chat_with_web_knowledge.py](src/agents/09chat_with_web_knowledge.py) 能运行
+
+[10chat_with_db_knowledge.py](src/agents/10chat_with_db_knowledge.py) 能运行
+
+[11chat_with_vector_store_knowledge.py](src/agents/11chat_with_vector_store_knowledge.py) 能运行
+
+[12custom_prompting.py](src/agents/12custom_prompting.py) 能运行
 
 ##
