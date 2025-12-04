@@ -17,4 +17,6 @@
 
 [01run-a-agent.py](src/agents/01run-a-agent.py) 能运行，但是 image 图片的网站已过期，无法运行图片解析部分
 
+[0202images.py](src/agents/02images.py) 能运行
+
 ##
