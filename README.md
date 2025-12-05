@@ -23,7 +23,7 @@
 
 [04function_tools.py](src/agents/04function_tools.py) 能运行
 
-[05function_tools_approvals.py](src/agents/05function_tools_approvals.py) 无法运行，最新的代码里包含了 approval_mode 但是 agent-framework>=1.0.0b251120 里还没有，等更新吧
+[05function_tools_approvals.py](src/agents/05function_tools_approvals.py) 将 agent 替换成 04 中的azure agent 后运行成功
 
 [06structured_output.py](src/agents/06structured_output.py) 能运行
 
