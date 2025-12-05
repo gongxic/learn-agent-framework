@@ -25,9 +25,9 @@
 
 [05function_tools_approvals.py](src/agents/05function_tools_approvals.py) 无法运行，最新的代码里包含了 approval_mode 但是 agent-framework>=1.0.0b251120 里还没有，等更新吧
 
-[06custom_tool.py](src/agents/06custom_tool.py) 能运行
+[06structured_output.py](src/agents/06structured_output.py) 能运行
 
-[07agent_memory.py](src/agents/07agent_memory.py) 能运行
+[07agent_as_function_tool.py](src/agents/07agent_as_function_tool.py) 能运行
 
 [08chat_with_file_knowledge.py](src/agents/08chat_with_file_knowledge.py) 能运行
 
