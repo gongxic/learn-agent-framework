@@ -36,4 +36,6 @@ async def main():
     result = await main_agent.run("What is the weather like in Amsterdam?")
     print(result.text)
 
-asyncio.run(main())
+
+if __name__ == "__main__":
+    asyncio.run(main())

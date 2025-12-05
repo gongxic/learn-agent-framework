@@ -35,4 +35,6 @@ async def main():
     result4 = await agent.run("Now add some emojis to the joke and tell it in the voice of a robot.", thread=thread2)
     print(result4.text)
 
-asyncio.run(main())
+
+if __name__ == "__main__":
+    asyncio.run(main())

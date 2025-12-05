@@ -41,4 +41,6 @@ async def main():
     result = await agent.run(message)
     print(result.text)
 
-asyncio.run(main())
+
+if __name__ == "__main__":
+    asyncio.run(main())

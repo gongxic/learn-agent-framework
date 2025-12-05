@@ -22,8 +22,6 @@ async def main():
             print(update.text, end="", flush=True)
     print()  # New line after streaming is complete
 
-asyncio.run(main())
-
 
 # Running the agent with a ChatMessage
 
@@ -39,4 +37,6 @@ asyncio.run(main())
 #     result = await agent.run(message)
 #     print(result.text)
 
-# asyncio.run(main())
+
+if __name__ == "__main__":
+    asyncio.run(main())

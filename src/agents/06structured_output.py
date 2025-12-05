@@ -41,4 +41,5 @@ async def main():
         print(f"Name: {person_info.name}, Age: {person_info.age}, Occupation: {person_info.occupation}")
 
 
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())
