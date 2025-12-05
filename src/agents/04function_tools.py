@@ -6,18 +6,17 @@ from agent_framework.azure import AzureOpenAIChatClient
 from azure.identity import AzureCliCredential
 
 
-# @ai_function(name="weather_tool", description="Retrieves weather information for any location")
-# def get_weather(
-#     location: Annotated[str, Field(description="The location to get the weather for.")],
-# ) -> str:
-#     return f"The weather in {location} is cloudy with a high of 15°C."
+@ai_function(name="weather_tool", description="Retrieves weather information for any location")
+def get_weather(
+    location: Annotated[str, Field(description="The location to get the weather for.")],
+) -> str:
+    return f"The weather in {location} is cloudy with a high of 15°C."
 
 
-# agent = AzureOpenAIChatClient(credential=AzureCliCredential()).create_agent(
-#     instructions="You are a helpful assistant",
-#     tools=get_weather
-# )
-
+weather_agent = AzureOpenAIChatClient(credential=AzureCliCredential()).create_agent(
+    instructions="You are a helpful assistant",
+    tools=get_weather
+)
 
 class WeatherTools:
     def __init__(self):
@@ -38,14 +37,18 @@ class WeatherTools:
 
 
 tools = WeatherTools()
-agent = AzureOpenAIChatClient(credential=AzureCliCredential()).create_agent(
+main_agent = AzureOpenAIChatClient(credential=AzureCliCredential()).create_agent(
     instructions="You are a helpful assistant",
     tools=[tools.get_weather, tools.get_weather_details]
 )
 
 
 async def main():
-    result = await agent.run("What is the weather like in Amsterdam?")
+
+    result = await weather_agent.run("What is the weather like in Amsterdam?")
     print(result.text)
+    result = await main_agent.run("What is the weather like in Amsterdam?")
+    print(result.text)
+
 
 asyncio.run(main())
