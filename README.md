@@ -29,7 +29,7 @@
 
 [07agent_as_function_tool.py](src/agents/07agent_as_function_tool.py) 能运行
 
-[08chat_with_file_knowledge.py](src/agents/08chat_with_file_knowledge.py) 能运行
+[08agent_as_mcp_tool.py](src/agents/08agent_as_mcp_tool.py) 能运行，但是不知道如何验证运行是否正常
 
 [09chat_with_web_knowledge.py](src/agents/09chat_with_web_knowledge.py) 能运行
 
